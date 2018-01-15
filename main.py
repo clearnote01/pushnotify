@@ -2,9 +2,17 @@ from subprocess import call
 from importlib import import_module
 from threading import Event, Thread
 from time import sleep
+import sys
+
+# Set your pushbullet access token and other settings here
+# Remove plugins you don't want to use
+# Available plugins
+# battery thermal uptime mpd monitor
+# the value corresponding to plugin is the
+# interval for notification for that notification
 
 config  = { 
-    'accessToken' : 'o.o9TnYvEXOfma8DSzeU21nZgHaMfOcEXB',
+    'accessToken' : '',
     'plugins': {
         'battery': 50,
         'thermal': 80,
@@ -14,6 +22,11 @@ config  = {
     },
     'run_for': 100000
 }
+
+if config['accessToken'] == '':
+    print('set config var accessToken to proceed')
+    print('see project README for more info')
+    sys.exit(0)
 
 class Plugins():
     def __init__(self,config):
