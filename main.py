@@ -6,18 +6,17 @@ import sys
 
 # Set your pushbullet access token and other settings here
 # Remove plugins you don't want to use
+#
 # Available plugins
 # battery thermal uptime mpd monitor
+#
 # the value corresponding to plugin is the
 # interval for notification for that notification
 
 config  = { 
     'accessToken' : '',
     'plugins': {
-        'battery': 50,
-        'thermal': 80,
         'uptime': 120,
-        'mpd': 150,
         'monitor': 180
     },
     'run_for': 100000
