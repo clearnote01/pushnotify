@@ -15,25 +15,25 @@ Requires: python-3.5+
   
 ## Plugins  
    
-These are the built-in plugins in client   
+These are the built-in plugins in client -  
   
-######battery - shows current battery status   
+##### battery - shows current battery status   
 ```  
 Requires: acpi  
 ```  
-######thermal - shows current cpu temperature    
+##### thermal - shows current cpu temperature    
 ```  
 Requires: acpi  
 ```    
-######mpd - show current playing song  
+##### mpd - show current playing song  
 ```  
 Requires: mpd, mpc    
 ```  
-######uptime - show current playing song  
+##### uptime - show system uptime
 ```  
-Requires: nothing    
+Requires: uptime    
 ```  
-######monitor - show current playing song  
+##### monitor - show status of specified processes
 ```  
-Requires: nothing    
+Requires: pgrep      
 ```  
