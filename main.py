@@ -6,11 +6,9 @@ from time import sleep
 config  = { 
     'accessToken' : 'o.o9TnYvEXOfma8DSzeU21nZgHaMfOcEXB',
     'plugins': {
-        'battery': 50,
-        'thermal': 80,
-        'uptime': 120,
-        'mpd': 150,
-        'monitor': 180
+        'battery': 5,
+        'mpd': 5,
+        'monitor': 5
     },
     'run_for': 100000
 }
